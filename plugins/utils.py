@@ -1,4 +1,16 @@
-def get_screenshot(file):
+from math import floor
+
+import os
+
+
+import cv2
+
+import random
+
+from string import ascii_letters, ascii_uppercase, digits
+
+from pyrogram.types import Message, MessageEntity
+    def get_screenshot(file):
 
     cap = cv2.VideoCapture(file)
 
