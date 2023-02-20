@@ -10,7 +10,7 @@ from helper_func import encode
 
 
 
-@client.on_message(filters.chat(source_channel) & filters.document)
+@Bot.on_message(filters.chat(source_channel) & filters.document)
 async def on_file(client, message: Message):
     file = await message.download()
     screenshot_file = os.path.join(os.path.dirname(file), 'screenshot.png')
