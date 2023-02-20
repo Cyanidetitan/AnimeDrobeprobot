@@ -4,7 +4,7 @@ import subprocess
 
 from pyrogram import Client, filters
 
-app = Client("my_bot")
+from bot import bot 
 
 # Define the source and destination channels
 
