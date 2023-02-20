@@ -2,6 +2,7 @@ import asyncio
 import base64
 import os
 import subprocess
+import ffmpeg
 from bot import Bot 
 from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup
