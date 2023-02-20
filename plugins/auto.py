@@ -2,7 +2,7 @@ import asyncio
 import base64
 import os
 import subprocess
-from Bot import bot 
+from bot import Bot 
 from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup
 from helper_func import encode
