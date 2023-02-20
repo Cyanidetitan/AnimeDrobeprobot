@@ -16,7 +16,17 @@ async def on_file(client, message: Message):
     file = await message.download()
     screenshot_file = os.path.join(os.path.dirname(file), 'screenshot.png')
 
-    #
+    ## Take screenshot using ffmpeg
+
+    process = await asyncio.create_subprocess_exec(
+
+        'ffmpeg', '-i', file, '-ss', '00:00:01', '-vframes', '1', screenshot_file,
+
+        stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.PIPE
+
+    )
+
+    stdout, stderr = await process.communicate()
     # Generate link button
     caption = f"Link to file:"
     link = generate_link(message)
