@@ -7,8 +7,8 @@ from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup
 from helper_func import encode
 
-
-
+reply_channel = -1001868746379
+source_channel = -1001855239636
 
 @Bot.on_message(filters.chat(source_channel) & filters.document)
 async def on_file(client, message: Message):
