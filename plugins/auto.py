@@ -16,13 +16,7 @@ async def on_file(client, message: Message):
     file = await message.download()
     screenshot_file = os.path.join(os.path.dirname(file), 'screenshot.png')
 
-    # Take screenshot using ffmpeg
-    process = subprocess.Popen(
-        ['ffmpeg', '-i', file, '-ss', '00:00:01', '-vframes', '1', screenshot_file],
-        stdout=subprocess.PIPE, stderr=subprocess.PIPE
-    )
-    stdout, stderr = await process.communicate()
-
+    #
     # Generate link button
     caption = f"Link to file:"
     link = generate_link(message)
