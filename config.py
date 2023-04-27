@@ -10,7 +10,7 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6066128663:AAGoWugwlqxfsAKirIzVJP-JOH0o--b65Rk")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6055392037:AAEjZi_VLMFG5Hnrzb8PexME0jnjn7qW0EQ")
 
 #Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "8858279"))
@@ -19,10 +19,10 @@ APP_ID = int(os.environ.get("APP_ID", "8858279"))
 API_HASH = os.environ.get("API_HASH", "ef28c3f458143cbcb4271a98a2e9d596")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001855239636"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001884211217"))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "5371981851"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "5700625607"))
 
 #Port
 PORT = os.environ.get("PORT", "8080")
@@ -32,7 +32,7 @@ DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://480p:encode@cluster0.7fgw
 DB_NAME = os.environ.get("DATABASE_NAME", "filesharexbot")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", " -1001855239636"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001552684417"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
@@ -52,13 +52,13 @@ FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Hello {first}\n\n<b>You need to
 CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
 
 #set True if you want to prevent users from forwarding files from bot
-PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "True") == "True" else False
+PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "True" else False
 
 #Set true if you want Disable your Channel Posts Share button
 DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'True'
 
 BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
-USER_REPLY_TEXT = "❌I am working for @AnimeGator!"
+USER_REPLY_TEXT = "❌I am working!"
 
 ADMINS.append(OWNER_ID)
 ADMINS.append(1250450587)
