@@ -32,12 +32,12 @@ DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://480p:encode@cluster0.7fgw
 DB_NAME = os.environ.get("DATABASE_NAME", "filesharexbot")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", " "))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", ""))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", " ")
+START_MSG = os.environ.get("START_MESSAGE", "optimized!")
 try:
     ADMINS=[]
     for x in (os.environ.get("ADMINS", "").split()):
