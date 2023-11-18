@@ -19,10 +19,10 @@ APP_ID = int(os.environ.get("APP_ID", "8858279"))
 API_HASH = os.environ.get("API_HASH", "ef28c3f458143cbcb4271a98a2e9d596")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002078922168")
+CHANNEL_ID = -1002078922168
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "5894098166"))
+OWNER_ID = 5894098166
 
 #Port
 PORT = os.environ.get("PORT", "1230")
@@ -32,12 +32,12 @@ DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://480p:encode@cluster0.7fgw
 DB_NAME = os.environ.get("DATABASE_NAME", "filesharexbot")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002038958624")
+FORCE_SUB_CHANNEL = -1002038958624
 
-TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
+TG_BOT_WORKERS = 4
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", "optimized!")
+START_MSG = os.environ.get("START_MESSAGE", "I am committed!")
 try:
     ADMINS=[]
     for x in (os.environ.get("ADMINS", "").split()):
