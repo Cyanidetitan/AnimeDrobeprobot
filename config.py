@@ -10,7 +10,7 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6663238213:AAG5SyLajYDQH6jRbmP4mYaScGxO7fzW0l0")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6880190548:AAFQWLtd4XnoWrf7j7aNcgsI7czpRS2rBS8")
 
 #Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "8858279"))
@@ -19,10 +19,10 @@ APP_ID = int(os.environ.get("APP_ID", "8858279"))
 API_HASH = os.environ.get("API_HASH", "ef28c3f458143cbcb4271a98a2e9d596")
 
 #Your db channel Id
-CHANNEL_ID = -1002078922168
+CHANNEL_ID = -1002035366129
 
 #OWNER ID
-OWNER_ID = 5894098166
+OWNER_ID = 6302755946
 
 #Port
 PORT = os.environ.get("PORT", "1230")
@@ -32,12 +32,12 @@ DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://480p:encode@cluster0.7fgw
 DB_NAME = os.environ.get("DATABASE_NAME", "filesharexbot")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = -1002038958624
+FORCE_SUB_CHANNEL = -1002077927210
 
 TG_BOT_WORKERS = 4
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", "I am committed!")
+START_MSG = os.environ.get("START_MESSAGE", "I am committed to @openthedeals")
 try:
     ADMINS=[]
     for x in (os.environ.get("ADMINS", "").split()):
