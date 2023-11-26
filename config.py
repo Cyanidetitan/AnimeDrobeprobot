@@ -37,7 +37,7 @@ FORCE_SUB_CHANNEL = -1002077927210
 TG_BOT_WORKERS = 4
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", "I am committed to @openthedeals")
+START_MSG = os.environ.get("START_MESSAGE", "You can access the bot here : https://t.me/+jIPtTvCFi_s3NTk1 Thank you!")
 try:
     ADMINS=[]
     for x in (os.environ.get("ADMINS", "").split()):
